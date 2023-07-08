@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.first {
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    margin-top: 6vh;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+    color: white;
+}
+
+
+.centre {
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice {
+    text-align: center;
+    display: inline-block;
+}
+
+.padding {
+    padding: 1% 10% 1% 10%;
+    font-size: 2rem;
+}
+
+.game {
+    background-color: white;
+    padding-bottom: 5%;
+    text-align: center;
+    margin-top: 1000px;
+    color: #000;
+}
+
+.new {
+    text-align: center;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    padding-top: 30px;
+}
+
+#blob {
+    background-color: white;
+    height: 300px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+
+    background: linear-gradient(to right,
+            grey,
+            white,
+        );
+    animation: animate 5s linear infinite;
+    filter: blur(200px);
+    z-index: -1;
+}
+
+@keyframes animate {
+    from {
+        rotate: 30deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+
+}
